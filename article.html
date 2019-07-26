@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* 段落标题前的橙色竖线 */
+    
+    h3::before {
+        content: '|';
+        width: 2px;
+        height: 5px;
+        background: #F69A42;
+        color: #F69A42;
+        margin-right: 3px;
+    }
+    /* 段落样式 */
+    
+    div,
+    p {
+        line-height: 25px;
+        color: #333333;
+        font-family: 'PingFangSC-Regular';
+        font-size: 16px;
+        text-align: left;
+    }
+    /* 段落标题样式 */
+    
+    h3 {
+        font-family: 'PingFangSC-Medium';
+    }
+    /* img本身样式 */
+    
+    .img-senior {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%
+    }
+    /* img标题样式 */
+    
+    .img-title {
+        text-align: center;
+        font-size: 14px;
+        font-family: 'PingFangSC-Regular';
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+        line-height: 25px;
+    }
+</style>
+
+<body>
+    <div id="img-content">
+        <div>
+            <h3>我是段落标题</h3>
+            <p>具体内容</p>
+        </div>
+
+        <div> 饶舌RAP是70年代流行的说唱音乐。它以人声的吟唱来代替音乐中旋律的部分，加上鼓的浓郁节奏;朗朗上口的通俗歌词，Rap一下子成为了年轻人的最爱。</div>
+        <div>
+            <img id='img-id' class="img-senior" data-ratio="1" data-type="png" data-w="36" src="./deal.png">
+            <p class="img-title">图片标题</p>
+        </div>
+    </div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script>
+    $("div[class=img-content] img").each(function() {
+        var src = $(this).attr("src");
+        if (src.indexOf("png") != -1 || src.indexOf("gif") != -1) {
+            document.getElementById("img-id").classList.remove("img-senior")
+        }
+    });
+    $("div[class=img-content] img").each(function() {
+        var srcLable = $(this);
+        if (srcLable.hasClass('img-not-content')) {
+            document.getElementById("img-id").classList.remove("img-senior")
+        }
+    });
+    $("div[class=img-content] div").each(function() {
+        var srctext = $(this).attr("text-indent");
+        if (srctext) {
+            document.getElementById("img-content").classList.remove("img-content")
+        }
+    });
+</script>
+
+</html>
