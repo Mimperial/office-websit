@@ -9,9 +9,13 @@
     display: flex;
 }
 
-.index_navigation a {
+.sl-title a {
     color: #000;
     text-decoration: none;
+}
+
+.index_navigation_ul .head_add_color a {
+    color: #90d5ff;
 }
 
 .sl-title {
@@ -57,7 +61,7 @@
     position: relative;
     height: 30em;
     width: 100%;
-    background: url(../images/bigdatahalf.png) center center;
+    background: url(../images/shakehands.png) center center;
     background-size: cover;
 }
 
@@ -114,93 +118,87 @@
     font-size: 16px;
 }
 
-.index_body_informate {
-    /* width: 100%; */
-    height: 426px;
-    display: flex;
-    flex-direction: column;
-    margin: 1em auto
-}
-
-.index_body_informate_resetHeight {
-    height: 718px;
-}
-
-.index_body_informate_title {
-    height: 60px;
+.sl-pdl-info {
     width: 100%;
-    border-left: 5px solid #6bcbff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    height: 10em;
+    background: rgba(170, 166, 166, 0.25);
+    padding: 2em 0
 }
 
-.index_body_title_china {
-    font-size: 28px;
-    color: #333333;
-    padding-left: 25px;
-    box-sizing: border-box;
-    letter-spacing: 3px;
+.sl-pdl-info h3 {
+    text-align: center
 }
 
-.index_body_title_english {
-    font-size: 15px;
-    color: #333333;
-    font-weight: bold;
-    padding-left: 25px;
-    box-sizing: border-box;
-    padding-bottom: 2px;
-}
-
-.index_body_informate_body {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.index_body_informate_body li {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.index_body_informate_word {
-    margin-top: 28px;
-    font-size: 18px;
-    color: #333333;
-    letter-spacing: 2px;
-}
-
-.index_body_informate_title_bottom {
-    flex: 1;
-    width: 100%;
-    display: flex;
-    /*align-items: center;*/
-}
-
-.index_body_informate_left,
-.index_body_informate_right {
-    flex: 1;
-    height: 465px;
-    margin-top: 90px;
-}
-
-.index_body_informate_left_content {
-    width: 560px;
-    margin: 0 auto;
-}
-
-.index_body_informate_left_content .index_body_introduction {
-    font-size: 16px;
-    line-height: 30px;
+.sl-pdl-info p {
+    margin: 1em;
+    padding: 1em 30em;
+    line-height: 2em;
     text-indent: 2em;
-    color: #4d4d4d;
-    letter-spacing: 1px;
+}
+
+.sl-info {
+    height: 15em;
+    display: flex;
+    flex-direction: row;
+}
+
+.sl-info ul {
+    display: flex;
+    flex-direction: row;
+    line-height: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.sl-info ul li {
+    width: 33%;
+    padding: 5em;
+    color: #f1efef;
+}
+
+.sl-info ul li:nth-child(odd) {
+    background: orange
+}
+
+.sl-info ul li:nth-child(even) {
+    background: url('../images/team.png')
+}
+
+.call-us {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.call-us h3 {
+    text-align: center;
+    padding: 1em
+}
+
+.call-us-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.call-mid {
+    height: 12em;
+    border-right: 1px solid #000;
+    margin-top: 1em;
+}
+
+.call-us-text {
+    margin: 1em 2em;
+    padding: 1em 5em;
+}
+
+.call-us-qr {
+    margin: 1em 3em;
+    padding: 1.2em 5em;
+}
+
+.call-us-text ul li {
+    height: 3em;
 }
 
 .index_footer {
