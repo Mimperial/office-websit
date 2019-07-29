@@ -347,21 +347,21 @@ video {
 
 .modalBox-matter {
     display: flex;
-    /*/*弹性布局*/
     flex-flow: column nowrap;
     justify-content: space-between;
-    /*两端对齐*/
     width: 30%;
     height: 90%;
     margin: 30px auto 100px;
     border-radius: 10px;
     -webkit-animation: zoom 0.6s;
     animation: zoom 0.6s;
-    resize: both;
+    /* resize: both;*/
+    /* 是否允许用户自行移动改变大小*/
     overflow: auto;
 }
 
 @keyframes zoom {
+    /* 从*到*的变化*/
     from {
         transform: scale(0)
     }
