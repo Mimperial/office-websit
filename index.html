@@ -79,30 +79,117 @@
         </div>
         <div class="index_body index_body_company_profile">
             <div class="screen-capture">
-                <div>
+
+                <div class="screen-capture-item">
                     <h5>摘要页</h5>
                     <p>从未有过的极致搜索体验，无广告，无跳转；</p>
-                    <img src="./images/summary.jpg" alt=""></div>
-                <div>
+                    <img class="btn" id="showMax" src="./images/summary.jpg" alt="">
+                    <div id="modalBox" class="modal-box">
+                        <div class="modalBox-matter">
+                            <header class="modalBox-header">
+                                <span class="mtclose">×</span>
+                            </header>
+                            <div class="modalBox-body">
+
+                                <img src="./images/summary.jpg">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screen-capture-item">
                     <h5>关联页</h5>
                     <p>分类汇总，全盘掌握</p>
-                    <img src="./images/relation.jpg" alt=""></div>
-                <div>
+                    <img id="showMaxRel" class="btn" src="./images/relation.jpg" alt="">
+                    <div id="modalBoxRel" class="modal-box">
+                        <div class="modalBox-matter">
+                            <header class="modalBox-header">
+                                <span class="mtcloseRel">×</span>
+                            </header>
+                            <div class="modalBox-body">
+
+                                <img src="./images/relation.jpg">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-capture-item">
                     <h5>时间线</h5>
                     <p>信息按照时间大事件整理，轻松洞察发展趋势</p>
-                    <img src="./images/timeline.jpg" alt=""></div>
-                <div>
+                    <img id="showMaxTime" class="btn" src="./images/timeline.jpg" alt="">
+                    <div id="modalBoxTime" class="modal-box">
+                        <div class="modalBox-matter">
+                            <header class="modalBox-header">
+                                <span class="mtcloseTime">×</span>
+                            </header>
+                            <div class="modalBox-body">
+
+                                <img src="./images/timeline.jpg">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-capture-item">
                     <h5>图片详情</h5>
                     <p>超过1000万张炫酷图片，抄底给你</p>
-                    <img src="./images/imgdetail.jpg" alt=""></div>
-                <div>
+                    <img id="showMaxImg" class="btn" src="./images/imgdetail.jpg" alt="">
+                    <div id="modalBoxImg" class="modal-box">
+                        <div class="modalBox-matter">
+                            <header class="modalBox-header">
+                                <span class="mtcloseImg">×</span>
+                            </header>
+                            <div class="modalBox-body">
+
+                                <img src="./images/imgdetail.jpg">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-capture-item">
                     <h5>搜索辅助</h5>
                     <p>边敲边看，互动搜索，省时省力</p>
-                    <img src="./images/searchelp.jpg" alt=""></div>
-                <div>
+                    <img id="showMaxSearch" class="btn" src="./images/searchelp.jpg" alt="">
+                    <div id="modalBoxSearch" class="modal-box">
+                        <div class="modalBox-matter">
+                            <header class="modalBox-header">
+                                <span class="mtcloseSearch">×</span>
+                            </header>
+                            <div class="modalBox-body">
+
+                                <img src="./images/searchelp.jpg">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-capture-item">
                     <h5>结构化搜索</h5>
                     <p>从未有过的极致搜索体验，无广告，无跳转</p>
-                    <img src="./images/structuraSearch.jpg" alt=""></div>
+                    <img id="showMaxStracture" class="btn" src="./images/structuraSearch.jpg" alt="">
+                    <div id="modalBoxStracture" class="modal-box">
+                        <div class="modalBox-matter">
+                            <header class="modalBox-header">
+                                <span class="mtcloseStracture">×</span>
+                            </header>
+                            <div class="modalBox-body">
+
+                                <img src="./images/structuraSearch.jpg">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -150,7 +237,79 @@
 
         </div>
     </div>
-    <script src="./js/index.js" type="text/javascript"></script>
+    <!-- <script src="./js/index.js" type="text/javascript"></script> -->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+
+            var btn = document.getElementById('showMax');
+            var mtclose = document.getElementsByClassName('mtclose')[0];
+            var modalBox = document.getElementById('modalBox');
+            btn.addEventListener('click', function() {
+                modalBox.style.display = "block";
+            });
+            mtclose.addEventListener('click', function() {
+                modalBox.style.display = "none";
+            });
+            // -------------------------------------------
+            var showMaxRel = document.getElementById('showMaxRel');
+            var mtcloseRel = document.getElementsByClassName('mtcloseRel')[0];
+            var modalBoxRel = document.getElementById('modalBoxRel');
+            showMaxRel.addEventListener('click', function() {
+                modalBoxRel.style.display = "block";
+            });
+            mtcloseRel.addEventListener('click', function() {
+                modalBoxRel.style.display = "none";
+            });
+            // -------------------------------------------
+            var showMaxTime = document.getElementById('showMaxTime');
+            var mtcloseTime = document.getElementsByClassName('mtcloseTime')[0];
+            var modalBoxTime = document.getElementById('modalBoxTime');
+            showMaxTime.addEventListener('click', function() {
+                modalBoxTime.style.display = "block";
+            });
+            modalBoxTime.addEventListener('click', function() {
+                modalBoxTime.style.display = "none";
+            });
+            // -------------------------------------------
+            var showMaxImg = document.getElementById('showMaxImg');
+            var mtcloseImg = document.getElementsByClassName('mtcloseImg')[0];
+            var modalBoxImg = document.getElementById('modalBoxImg');
+            showMaxImg.addEventListener('click', function() {
+                modalBoxImg.style.display = "block";
+            });
+            modalBoxImg.addEventListener('click', function() {
+                modalBoxImg.style.display = "none";
+            });
+            // -------------------------------------------
+            var showMaxSearch = document.getElementById('showMaxSearch');
+            var mtcloseSearch = document.getElementsByClassName('mtcloseSearch')[0];
+            var modalBoxSearch = document.getElementById('modalBoxSearch');
+            showMaxSearch.addEventListener('click', function() {
+                modalBoxSearch.style.display = "block";
+            });
+            modalBoxSearch.addEventListener('click', function() {
+                modalBoxSearch.style.display = "none";
+            });
+            // -------------------------------------------
+            var showMaxStracture = document.getElementById('showMaxStracture');
+            var mtcloseStracture = document.getElementsByClassName('mtcloseStracture')[0];
+            var modalBoxStracture = document.getElementById('modalBoxStracture');
+            showMaxStracture.addEventListener('click', function() {
+                modalBoxStracture.style.display = "block";
+            });
+            modalBoxStracture.addEventListener('click', function() {
+                modalBoxStracture.style.display = "none";
+            });
+
+            // $("div.modal-box").click(function() {
+
+
+
+
+            // });
+        });
+    </script>
 </body>
 
 </html>
