@@ -188,25 +188,49 @@
     font-size: 16px;
 }
 
+.sl-info {
+    height: 10em;
+    padding: 2em 0;
+}
+
+.sl-info ul {
+    display: flex;
+    flex-direction: row;
+    line-height: 2em;
+}
+
+.sl-info ul li {
+    padding: 0 5em;
+    margin: 0 auto
+}
+
+.sl-info ul li p {
+    text-align: justify
+}
+
+.sl-info ul h4 {
+    text-align: center;
+}
+
+
+/* 底部 */
+
 .index_footer {
-    height: 15em;
     width: 100%;
     background: orange;
 }
 
-.sl-about {
-    padding: 2em 0;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto
-}
-
 .index_footer ul {
+    width: 1405px;
     padding: 0 5em;
     line-height: 2em;
+    margin: 0 auto;
+}
+
+.index_footer ul li p {
+    text-align: justify
 }
 
 .index_footer ul li {
-    /* padding: 0 5em; */
-    /* text-indent: 2em; */
+    display: inline-block
 }

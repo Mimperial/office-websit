@@ -131,7 +131,7 @@
 
 .sl-pdl-info p {
     margin: 1em;
-    padding: 1em 30em;
+    padding: 1em 20em;
     line-height: 2em;
     text-indent: 2em;
 }
@@ -201,25 +201,56 @@
     height: 3em;
 }
 
-.index_footer {
-    height: 15em;
-    width: 100%;
-    background: orange;
-}
-
-.sl-about {
-    padding: 2em 0;
+.index_footer ul {
     display: flex;
     flex-direction: row;
-    margin: 0 auto
-}
-
-.index_footer ul {
-    padding: 0 5em;
     line-height: 2em;
 }
 
 .index_footer ul li {
-    /* padding: 0 5em; */
-    /* text-indent: 2em; */
+    padding: 0 5em;
+    margin: 0 auto
+}
+
+.index_footer ul li p {
+    text-align: justify
+}
+
+.index_footer ul h4 {
+    text-align: center;
+}
+
+
+/* 底部 */
+
+.index_footer {
+    width: 100%;
+    height: 10em;
+    padding: 2em 0;
+    background: orange;
+}
+
+.index_footer ul {
+    width: 1405px;
+    padding: 0 5em;
+    line-height: 2em;
+    margin: 0 auto;
+}
+
+.index_footer ul li p {
+    text-align: justify
+}
+
+.index_footer ul li {
+    display: inline-block
+}
+
+li.justify {
+    text-align: justify;
+    height: 2em;
+}
+
+li.justify>span {
+    display: inline-block;
+    padding-left: 100%;
 }
