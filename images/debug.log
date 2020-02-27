@@ -5,3 +5,26 @@
 [0731/094617:INFO:exception_record.cc(518)] [QB]Process ID: 16304 Type: 2
 [0731/101730:INFO:exception_record.cc(518)] [QB]Process ID: 35848 Type: 2
 [0731/101752:INFO:exception_record.cc(518)] [QB]Process ID: 33228 Type: 2
+[0731/153254:INFO:exception_record.cc(518)] [QB]Process ID: 35052 Type: 2
+[0731/191014:INFO:exception_record.cc(518)] [QB]Process ID: 9884 Type: 2
+[0731/191015:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0731/191015:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0731/191015:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0731/191015:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0731/191129:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0731/191209:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0731/191218:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0731/191220:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0801/133949:INFO:exception_record.cc(518)] [QB]Process ID: 21068 Type: 2
+[0801/180347:INFO:exception_record.cc(518)] [QB]Process ID: 38720 Type: 2
+[0801/191616:INFO:exception_record.cc(518)] [QB]Process ID: 25928 Type: 2
+[0802/112747:INFO:exception_record.cc(518)] [QB]Process ID: 38068 Type: 2
+[0802/142524:INFO:exception_record.cc(518)] [QB]Process ID: 29668 Type: 2
+[0802/153434:INFO:exception_record.cc(518)] [QB]Process ID: 40432 Type: 2
+[0802/154411:INFO:exception_record.cc(518)] [QB]Process ID: 11912 Type: 2
+[0802/154420:INFO:exception_record.cc(518)] [QB]Process ID: 15016 Type: 2
+[0802/154420:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0802/154555:ERROR:ffmpeg_demuxer.cc(1510)] media::FFmpegDemuxer::OnReadFrameDone result=-541478725 IsMaxMemoryUsageReached=0
+[0802/154656:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0802/155625:WARNING:webmediaplayer_impl.cc(341)] Using MultibufferDataSource
+[0803/114922:INFO:exception_record.cc(518)] [QB]Process ID: 39316 Type: 2
